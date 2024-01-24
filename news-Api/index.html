@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="eng" data-theme="light">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <title>News Feed</title>
+      <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body class="mx-48 mt-8">
+      <header>
+         <div class="navbar bg-base-100">
+            <div class="flex-1">
+               <a class="btn btn-ghost text-4xl">Rich Man's</a>
+               <div class="">
+                  <ul class="flex gap-2 text-center">
+                     <li><button class="btn btn-ghost">News</button></li>
+                     <li><button class="btn btn-ghost">Home</button></li>
+                     <li><button class="btn btn-ghost">Login</button></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="flex-none gap-2">
+               <div class="form-control">
+                  <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+               </div>
+               <div class="dropdown dropdown-end">
+                  <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                     <div class="w-10 rounded-full">
+                        <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                     </div>
+                  </div>
+                  <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                     <li>
+                        <a class="justify-between">
+                           Profile
+                           <span class="badge">New</span>
+                        </a>
+                     </li>
+                     <li><a>Settings</a></li>
+                     <li><a>Logout</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- <div id="MyClockDisplay" class="clock" onload="showTime()">
+      <div class="grid grid-flow-col gap-5 text-center auto-cols-max justify-center">
+            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+               <span class="countdown font-mono text-5xl">
+                  <span style="--value: 15"></span>
+               </span>
+               days
+            </div>
+            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+               <span class="countdown font-mono text-5xl">
+                  <span style="--value: 10"></span>
+               </span>
+               hours
+            </div>
+            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+               <span class="countdown font-mono text-5xl">
+                  <span style="--value: 24"></span>
+               </span>
+               min
+            </div>
+            <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+               <span class="countdown font-mono text-5xl">
+                  <span style="--value: 43"></span>
+               </span>
+               sec
+            </div>
+         </div>
+      </div> -->
+      <section class="">
+         
+      </section>
+      <section>
+         <div class="carousel w-full rounded-lg">
+            <div id="slide1" class="carousel-item relative w-full">
+               <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide4" class="btn btn-circle">❮</a>
+                  <a href="#slide2" class="btn btn-circle">❯</a>
+               </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+               <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide1" class="btn btn-circle">❮</a>
+                  <a href="#slide3" class="btn btn-circle">❯</a>
+               </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+               <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide2" class="btn btn-circle">❮</a>
+                  <a href="#slide4" class="btn btn-circle">❯</a>
+               </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+               <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                  <a href="#slide3" class="btn btn-circle">❮</a>
+                  <a href="#slide1" class="btn btn-circle">❯</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <h2 class="text-center text-4xl my-4 font-medium underline">News Feed</h2>
+      <section id="container" class="grid grid-cols-2 gap-5"></section>
+      <div id="show-all" class="text-center my-3 hidden">
+         <button onclick="showAllBtn()" class="btn btn-warning text-xl">Show All</button>
+      </div>
+      <script src="index.js"></script>
+   </body>
+</html>
